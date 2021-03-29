@@ -64,6 +64,11 @@ export default {
   },
   methods: {
     priceFormatting
+  },
+  head() {
+    return {
+      title: "Your Cart"
+    };
   }
 };
 </script>

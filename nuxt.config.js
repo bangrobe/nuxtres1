@@ -2,7 +2,7 @@ require("dotenv").config();
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxtfood",
+    titleTemplate: "Nuxt Food Basic App - %s",
     htmlAttrs: {
       lang: "en"
     },
@@ -20,7 +20,6 @@ export default {
       }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -42,9 +41,10 @@ export default {
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: process.env.BASE_URL_API
+    baseUrl: process.env.BASE_URL_API || "http://localhost:1337"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  loading: "~/components/AppLoading.vue"
 };

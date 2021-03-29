@@ -40,7 +40,7 @@
                     dish.item
                   }}</span>
                   <span class="has-text-danger has-text-weight-light">
-                    {{ priceFormatting(dish.price) }}
+                    ${{ priceFormatting(dish.price) }}
                   </span>
                 </div>
                 <div>

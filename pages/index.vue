@@ -2,7 +2,10 @@
   <div>
     <AppHeader />
     <main class="container mt-4">
-      <app-restaurant-info :datasource="fooddata"></app-restaurant-info>
+      <app-restaurant-info
+        v-if="fooddata.length"
+        :datasource="fooddata"
+      ></app-restaurant-info>
     </main>
   </div>
 </template>
@@ -13,6 +16,11 @@ export default {
   name: "HomePage",
   computed: {
     ...mapState(["fooddata"])
+  },
+  head() {
+    return {
+      title: "Homepage"
+    };
   }
 };
 </script>

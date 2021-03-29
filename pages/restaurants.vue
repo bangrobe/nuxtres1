@@ -29,6 +29,11 @@ export default {
       }
       return this.fooddata;
     }
+  },
+  head() {
+    return {
+      title: "Restaurants"
+    };
   }
 };
 </script>

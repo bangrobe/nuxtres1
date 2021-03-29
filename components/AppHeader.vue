@@ -1,20 +1,25 @@
 <template>
-  <section
-    class="masthead hero is-medium"
-    role="img"
-    aria-label="Image Description"
-  >
-    <div class="hero-body">
-      <h2 class="has-text-centered title is-1 has-text-success">
-        <AppLogo />
-      </h2>
-      <div class="buttons is-centered">
-        <button class="is-centered button is-warning">
-          See our restaurants
-        </button>
+  <client-only>
+    <section
+      class="masthead hero is-medium"
+      role="img"
+      aria-label="Image Description"
+    >
+      <div class="hero-body">
+        <h2 class="has-text-centered title is-1 has-text-success">
+          Nuxt Food
+        </h2>
+        <div class="buttons is-centered">
+          <nuxt-link
+            :to="{ path: '/restaurants' }"
+            class="is-centered button is-warning"
+          >
+            See our restaurants
+          </nuxt-link>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </client-only>
 </template>
 
 <script>

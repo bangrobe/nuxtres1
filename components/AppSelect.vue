@@ -1,5 +1,7 @@
 <template>
-  <div class="box mt-4 is-flex is-justify-content-space-between">
+  <div
+    class="box mt-4 is-flex is-flex-wrap-wrap	is-justify-content-space-between"
+  >
     <div>
       <h2 class="is-2 mb-0">RESTAURANTS</h2>
     </div>

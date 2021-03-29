@@ -158,6 +158,11 @@ export default {
       };
       this.$store.commit("ADD_TO_CART", formOutput);
     }
+  },
+  head() {
+    return {
+      title: this.currentItem.item
+    };
   }
 };
 </script>
