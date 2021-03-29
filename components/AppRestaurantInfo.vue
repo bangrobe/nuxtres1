@@ -28,7 +28,9 @@
               <!--Card Image-->
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img :src="`${getStrapiMedia(dish.image[0].url)}`" />
+                  <img
+                    :src="`${getStrapiMedia(dish.image[0].formats.small.url)}`"
+                  />
                 </div>
               </div>
               <!--Card content-->
